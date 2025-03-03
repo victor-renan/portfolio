@@ -236,14 +236,14 @@ function toggleTheme() {
           <LinkProject
             title="Preá Framework"
             description="Framework para desenvolvimento de aplicações backend com Go e Postgres PGX"
-            url="https://packagist.org/packages/victor-renan/laatransparente"
-            imageUrl="https://opengraph.githubassets.com/0/victor-renan/laatransparente"
+            url="https://packagist.org/packages/victor-renan/prea"
+            imageUrl="https://opengraph.githubassets.com/0/victor-renan/prea"
           />
           <LinkProject
             title="FileUpload"
             description="Backend para envio de arquivos escrita em Go sem uso de bibliotecas"
-            url="https://packagist.org/packages/victor-renan/laatransparente"
-            imageUrl="https://opengraph.githubassets.com/0/victor-renan/laatransparente"
+            url="https://packagist.org/packages/victor-renan/fileupload"
+            imageUrl="https://opengraph.githubassets.com/0/victor-renan/fileupload"
           />
         </div>
       </div>
