@@ -110,7 +110,7 @@ function toggleTheme() {
     </aside>
     <section class="lg:ml-106 w-full p-4 lg:pl-8 lg:py-8">
       <div class="flex flex-col">
-        <h1 class="text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Tecnologias</h1>
+        <h1 class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Tecnologias</h1>
         <div class="flex flex-wrap gap-4">
           <TechItem name="PHP" description="A popular linguagem de desenvolvimento web">
             <template #icon>
@@ -213,7 +213,7 @@ function toggleTheme() {
         </div>
       </div>
       <div class="flex flex-col mt-8">
-        <h1 class="text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Projetos</h1>
+        <h1 class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Projetos</h1>
         <div class="flex flex-wrap gap-4">
           <LinkProject
             title="PixGenerator"
