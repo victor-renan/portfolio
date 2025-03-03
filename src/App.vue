@@ -34,7 +34,7 @@ function toggleTheme() {
 <template>
   <main class="max-w-150 lg:max-w-7xl w-full flex flex-col lg:flex-row items-center lg:px-4">
     <aside
-      class="lg:top-0 lg:h-screen overflow-y-scroll lg:fixed lg:max-w-106 w-full flex flex-col gap-4 py-8 px-4 no-scrollbar"
+      class="lg:top-0 lg:h-screen lg:overflow-y-scroll lg:fixed lg:max-w-106 w-full flex flex-col gap-4 py-8 px-4 no-scrollbar"
     >
       <div class="p-4 pt-10 rounded-lg bg-stone-800 dark:bg-stone-200 relative">
         <button
