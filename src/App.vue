@@ -5,6 +5,8 @@ import LinkProject from './components/LinkProject.vue'
 import TechItem from './components/TechItem.vue'
 import ImageFrame from './components/ImageFrame.vue'
 
+import photo from '@/assets/img/i.jpeg'
+
 const theme = ref(localStorage.getItem('theme'))
 
 if (theme.value) {
@@ -46,7 +48,7 @@ function toggleTheme() {
           <i v-else class="bx bx-sun text-xl"></i>
         </button>
         <div class="flex flex-col items-center gap-3 text-center mb-6">
-          <ImageFrame class="w-35 h-35 rounded-lg" src="/src/assets/img/i.jpeg" />
+          <ImageFrame class="w-35 h-35 rounded-lg" :src="photo" />
           <div>
             <h1 class="text-3xl font-bold text-amber-200 dark:text-stone-600">Victor Renan</h1>
             <p class="text-amber-50 dark:text-stone-950">Desenvolvedor Full Stack</p>
