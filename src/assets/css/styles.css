@@ -3,6 +3,29 @@
 
 @theme {
   --font-sans: 'Inter', sans-serif;
+
+  --animate-slide-left: slide-left 0.5s ease-in-out;
+  --animate-appear: appear 0.5s ease-in-out;
+
+  @keyframes slide-left {
+    from {
+      margin-left: -64px;
+      opacity: 0.3;
+    }
+    to {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import LinkContact from './components/LinkContact.vue'
 import LinkProject from './components/LinkProject.vue'
 import TechItem from './components/TechItem.vue'
+import ImageFrame from './components/ImageFrame.vue'
 
 const theme = ref(localStorage.getItem('theme'))
 
@@ -34,7 +35,7 @@ function toggleTheme() {
 <template>
   <main class="max-w-150 lg:max-w-7xl w-full flex flex-col lg:flex-row items-center lg:px-4">
     <aside
-      class="lg:top-0 lg:h-screen lg:overflow-y-scroll lg:fixed lg:max-w-106 w-full flex flex-col gap-4 py-8 px-4 no-scrollbar"
+      class="lg:top-0 lg:h-screen lg:overflow-y-scroll lg:fixed lg:max-w-106 w-full flex flex-col gap-4 py-8 px-4 no-scrollbar animate-slide-left"
     >
       <div class="p-4 pt-10 rounded-lg bg-stone-800 dark:bg-stone-200 relative">
         <button
@@ -45,11 +46,7 @@ function toggleTheme() {
           <i v-else class="bx bx-sun text-xl"></i>
         </button>
         <div class="flex flex-col items-center gap-3 text-center mb-6">
-          <img
-            class="w-35 h-35 object-cover rounded-lg"
-            src="./assets/img/i.jpeg"
-            alt="Photo of Victor Renan"
-          />
+          <ImageFrame class="w-35 h-35 rounded-lg" src="/src/assets/img/i.jpeg" />
           <div>
             <h1 class="text-3xl font-bold text-amber-200 dark:text-stone-600">Victor Renan</h1>
             <p class="text-amber-50 dark:text-stone-950">Desenvolvedor Full Stack</p>
@@ -66,7 +63,12 @@ function toggleTheme() {
             icon="bx bxl-github"
             url="https://github.com/victor-renan"
           />
-          <LinkContact class="flex-1" title="Linkedin" icon="bx bxl-linkedin" url="" />
+          <LinkContact
+            class="flex-1"
+            title="Linkedin"
+            icon="bx bxl-linkedin"
+            url="https://www.linkedin.com/in/renan-alves-05995a20a"
+          />
           <LinkContact
             class="flex-1"
             title="Email"
@@ -108,9 +110,13 @@ function toggleTheme() {
         </ul>
       </div>
     </aside>
-    <section class="lg:ml-106 w-full p-4 lg:pl-8 lg:py-8">
+    <section class="lg:ml-106 w-full p-4 lg:pl-8 lg:py-8 animate-appear">
       <div class="flex flex-col">
-        <h1 class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Tecnologias</h1>
+        <h1
+          class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4"
+        >
+          Tecnologias
+        </h1>
         <div class="flex flex-wrap gap-4">
           <TechItem name="PHP" description="A popular linguagem de desenvolvimento web">
             <template #icon>
@@ -213,7 +219,11 @@ function toggleTheme() {
         </div>
       </div>
       <div class="flex flex-col mt-8">
-        <h1 class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4">Projetos</h1>
+        <h1
+          class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4"
+        >
+          Projetos
+        </h1>
         <div class="flex flex-wrap gap-4">
           <LinkProject
             title="PixGenerator"
@@ -223,8 +233,8 @@ function toggleTheme() {
           />
           <LinkProject
             title="PixGenerator Web"
-            description="Um cliente web também feito em PHP para utilização da biblioteca pixgenerator"
-            url="https://retail-wildebeest-renan-3f55043f.koyeb.app/"
+            description="Um cliente web também feito em PHP e Vue.js para utilização da biblioteca pixgenerator"
+            url="https://pixgenerator-web.vercel.app/"
             imageUrl="https://opengraph.githubassets.com/0/victor-renan/pixgenerator-web"
           />
           <LinkProject

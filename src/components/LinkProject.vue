@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ImageFrame from './ImageFrame.vue'
+
 interface LinkProjectProps {
   title: string
   description: string
@@ -18,7 +20,11 @@ const props = withDefaults(defineProps<LinkProjectProps>(), {
     target="_blank"
     :href="props.url"
   >
-    <img class="rounded-lg w-full object-cover" :src="props.imageUrl" :alt="props.imageAlt" />
+    <ImageFrame
+      class="rounded-lg h-50 md:h-80 lg:h-30"
+      :src="props.imageUrl"
+      :alt="props.imageAlt"
+    />
     <div class="mt-2">
       <h1 class="text-xl font-bold mb-1 flex items-center gap-1">
         {{ props.title }}
