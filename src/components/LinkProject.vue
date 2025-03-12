@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<LinkProjectProps>(), {
 
 <template>
   <a
-    class="lg:max-w-60 transition hover:bg-stone-900 dark:hover:bg-stone-300 p-2 rounded-xl"
+    class="lg:max-w-60 transition hover:bg-stone-900 light:hover:bg-stone-300 p-2 rounded-xl"
     target="_blank"
     :href="props.url"
   >

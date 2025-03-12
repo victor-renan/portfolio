@@ -10,26 +10,26 @@ import photo from '@/assets/img/i.jpeg'
 const theme = ref(localStorage.getItem('theme'))
 
 if (theme.value) {
-  document.documentElement.classList.add('dark')
+  document.documentElement.classList.add('light')
 }
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (event) => {
   if (!event.matches) {
-    document.documentElement.classList.add('dark')
+    document.documentElement.classList.add('light')
   } else {
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove('light')
   }
 })
 
 function toggleTheme() {
   if (localStorage.getItem('theme')) {
     localStorage.removeItem('theme')
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove('light')
     theme.value = null
   } else {
-    localStorage.setItem('theme', 'dark')
-    document.documentElement.classList.add('dark')
-    theme.value = 'dark'
+    localStorage.setItem('theme', 'light')
+    document.documentElement.classList.add('light')
+    theme.value = 'light'
   }
 }
 </script>
@@ -39,22 +39,22 @@ function toggleTheme() {
     <aside
       class="lg:top-0 lg:h-screen lg:overflow-y-scroll lg:fixed lg:max-w-106 w-full flex flex-col gap-4 py-8 px-4 no-scrollbar animate-slide-left"
     >
-      <div class="p-4 pt-10 rounded-lg bg-stone-800 dark:bg-stone-200 relative">
+      <div class="p-4 pt-10 rounded-lg bg-stone-800 light:bg-stone-200 relative">
         <button
           @click="toggleTheme"
-          class="flex items-center justify-center bg-stone-700 dark:bg-stone-300 w-8 h-8 rounded-lg hover:bg-stone-600 dark:hover:bg-stone-400 cursor-pointer transition absolute top-4 right-4"
+          class="flex items-center justify-center bg-stone-700 light:bg-stone-300 w-8 h-8 rounded-lg hover:bg-stone-600 light:hover:bg-stone-400 cursor-pointer transition absolute top-4 right-4"
         >
-          <i v-if="theme === 'dark'" class="bx bx-moon text-xl"></i>
+          <i v-if="theme === 'light'" class="bx bx-moon text-xl"></i>
           <i v-else class="bx bx-sun text-xl"></i>
         </button>
         <div class="flex flex-col items-center gap-3 text-center mb-6">
           <ImageFrame class="w-35 h-35 rounded-lg" :src="photo" />
           <div>
-            <h1 class="text-3xl font-bold text-amber-200 dark:text-stone-600">Victor Renan</h1>
-            <p class="text-amber-50 dark:text-stone-950">Desenvolvedor Full Stack</p>
+            <h1 class="text-3xl font-bold text-amber-200 light:text-stone-600">Victor Renan</h1>
+            <p class="text-amber-50 light:text-stone-950">Desenvolvedor Full Stack</p>
           </div>
         </div>
-        <p class="text-center text-stone-300 dark:text-stone-800 mb-6">
+        <p class="text-center text-stone-300 light:text-stone-800 mb-6">
           Programador com mais de 2 anos de experiência na criação e manutenção de softwares
           robustos, intuitivos e eficientes.
         </p>
@@ -85,29 +85,29 @@ function toggleTheme() {
         />
       </div>
       <div
-        class="px-4 py-10 rounded-lg bg-stone-800 dark:bg-stone-200 flex justify-center flex-col"
+        class="px-4 py-10 rounded-lg bg-stone-800 light:bg-stone-200 flex justify-center flex-col"
       >
-        <h1 class="text-center mb-4 text-lg font-bold text-amber-100 dark:text-stone-600">
+        <h1 class="text-center mb-4 text-lg font-bold text-amber-100 light:text-stone-600">
           Educação e Certificações
         </h1>
         <ul class="text-sm list-disc ml-4 flex flex-col gap-4">
           <li>
             <p class="font-bold">Bacharelado em Sistemas da Informação</p>
-            <p class="text-stone-400 dark:text-stone-800">Instituto Federal do Ceará | 2024-28</p>
+            <p class="text-stone-400 light:text-stone-800">Instituto Federal do Ceará | 2024-28</p>
           </li>
           <li>
             <p class="font-bold">Curso Técnico de Informática</p>
-            <p class="text-stone-400 dark:text-stone-800">
+            <p class="text-stone-400 light:text-stone-800">
               E.E.E.P. Valter Nunes de Alencar | 2021-23
             </p>
           </li>
           <li>
             <p class="font-bold">Algoritmos com Javascript</p>
-            <p class="text-stone-400 dark:text-stone-800">FreeCodeCamp | 2024</p>
+            <p class="text-stone-400 light:text-stone-800">FreeCodeCamp | 2024</p>
           </li>
           <li>
             <p class="font-bold">Desenvolvimento Web Responsivo</p>
-            <p class="text-stone-400 dark:text-stone-800">FreeCodeCamp | 2021</p>
+            <p class="text-stone-400 light:text-stone-800">FreeCodeCamp | 2021</p>
           </li>
         </ul>
       </div>
@@ -115,14 +115,14 @@ function toggleTheme() {
     <section class="lg:ml-106 w-full p-4 lg:pl-8 lg:py-8 animate-appear">
       <div class="flex flex-col">
         <h1
-          class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4"
+          class="text-center lg:text-left text-3xl font-bold text-amber-200 light:text-stone-600 mb-4"
         >
           Tecnologias
         </h1>
         <div class="flex flex-wrap gap-4">
           <TechItem name="PHP" description="A popular linguagem de desenvolvimento web">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M64 30.332C28.654 30.332 0 45.407 0 64s28.654 33.668 64 33.668c35.345 0 64-15.075 64-33.668S99.346 30.332 64 30.332zm-5.982 9.81h7.293v.003l-1.745 8.968h6.496c4.087 0 6.908.714 8.458 2.139 1.553 1.427 2.017 3.737 1.398 6.93l-3.053 15.7h-7.408l2.902-14.929c.33-1.698.208-2.855-.365-3.473-.573-.617-1.793-.925-3.658-.925h-5.828L58.752 73.88h-7.291l6.557-33.738zM26.73 49.114h14.133c4.252 0 7.355 1.116 9.305 3.348 1.95 2.232 2.536 5.346 1.758 9.346-.32 1.649-.863 3.154-1.625 4.52-.763 1.364-1.76 2.613-2.99 3.745-1.468 1.373-3.098 2.353-4.891 2.936-1.794.585-4.08.875-6.858.875h-6.294l-1.745 8.97h-7.35l6.557-33.74zm57.366 0h14.13c4.252 0 7.353 1.116 9.303 3.348h.002c1.95 2.232 2.538 5.346 1.76 9.346-.32 1.649-.861 3.154-1.623 4.52-.763 1.364-1.76 2.613-2.992 3.745-1.467 1.373-3.098 2.353-4.893 2.936-1.794.585-4.077.875-6.855.875h-6.295l-1.744 8.97h-7.35l6.557-33.74zm-51.051 5.325-2.742 14.12h4.468c2.963 0 5.172-.556 6.622-1.673 1.45-1.116 2.428-2.981 2.937-5.592.485-2.507.264-4.279-.666-5.309-.93-1.032-2.79-1.547-5.584-1.547h-5.035zm57.363 0-2.744 14.12h4.47c2.965 0 5.17-.556 6.622-1.673 1.449-1.116 2.427-2.981 2.935-5.592.487-2.507.266-4.279-.664-5.309-.93-1.032-2.792-1.547-5.584-1.547h-5.035z"
                 ></path>
@@ -131,7 +131,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="Laravel" description="Um dos frameworks PHP mais usados do mercado">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zm11.317 10.307c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751zm71.668 13.261c5.422 3.122 9.908 5.702 9.95 5.744.114.103-19.774 11.535-20.046 11.523-.272-.008-19.915-11.335-19.907-11.473.01-.157 19.773-11.527 19.973-11.496.091.022 4.607 2.59 10.03 5.702zM16.3 25.328l9.558 5.503.055 27.247.05 27.252.233.368c.122.194.352.459.52.581.158.115 5.477 3.146 11.818 6.724l11.52 6.506v11.527c0 6.326-.043 11.516-.097 11.516-.041 0-10-5.699-22.124-12.676L5.793 97.201l-.03-38.966-.019-38.954.49.271c.283.15 4.807 2.748 10.065 5.775zm33.754 19.18v25.109l-.387.253c-.525.332-19.667 11.335-19.732 11.335-.03 0-.054-11.336-.054-25.193l.012-25.182 10-5.752c5.499-3.165 10.034-5.733 10.088-5.714.039.024.073 11.34.073 25.144zm38.15-5.775 10.023 5.763V55.92c0 10.838-.011 11.42-.176 11.357-.107-.041-4.642-2.64-10.083-5.774l-9.91-5.69v-11.42c0-6.287.032-11.424.062-11.424.043 0 4.577 2.592 10.084 5.764zm34.164 5.587c0 6.254-.042 11.412-.084 11.462-.072.115-19.896 11.538-20.022 11.538-.031 0-.062-5.135-.062-11.423v-11.42l10-5.756c5.507-3.16 10.042-5.752 10.084-5.752.053 0 .084 5.105.084 11.351zM95.993 70.933 52.005 96.04 32.056 84.693S76 59.277 76.176 59.343zm2.215 14.827-.034 11.442-22.028 12.676c-12.12 6.976-22.082 12.675-22.132 12.675-.053 0-.095-4.658-.095-11.516V99.51l22.08-12.592c12.132-6.923 22.101-12.59 22.154-12.602.043 0 .062 5.148.054 11.443z"
                 ></path>
@@ -140,7 +140,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="Typescript" description="Um superconjunto do Javascript">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M2 63.91v62.5h125v-125H2zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1A23 23 0 0180 109.19c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73l4.6-2.64 3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H57.16v46.23H45.65V69.26H29.38v-5a49.19 49.19 0 01.14-5.16c.06-.08 10-.12 22-.1h21.81z"
                 ></path>
@@ -160,14 +160,14 @@ function toggleTheme() {
                 ></path>
                 <path
                   d="M.91 9.569l25.067-.172 38.15 65.659L101.98 9.401l25.11.026-62.966 108.06z"
-                  class="fill-amber-200 dark:fill-stone-700"
+                  class="fill-amber-200 light:fill-stone-700"
                 ></path>
               </svg>
             </template>
           </TechItem>
           <TechItem name="TailwindCSS" description="Framework CSS para aplicações modernas">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                 ></path>
@@ -176,7 +176,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="Go" description="Poderosa linguagem para aplicações modernas">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <g fill-rule="evenodd">
                   <path
                     d="M11.156 54.829c-.243 0-.303-.122-.182-.303l1.273-1.637c.12-.182.424-.303.666-.303H34.55c.243 0 .303.182.182.364l-1.03 1.576c-.121.181-.424.363-.606.363zM2.004 60.404c-.242 0-.303-.12-.182-.303l1.273-1.636c.121-.182.424-.303.667-.303h27.636c.242 0 .364.182.303.364l-.485 1.454c-.06.243-.303.364-.545.364zM16.67 65.98c-.242 0-.302-.182-.181-.364l.848-1.515c.122-.182.364-.363.607-.363h12.12c.243 0 .364.181.364.424l-.12 1.454c0 .243-.243.425-.425.425zM79.58 53.738c-3.819.97-6.425 1.697-10.182 2.666-.91.243-.97.303-1.758-.606-.909-1.03-1.576-1.697-2.848-2.303-3.819-1.878-7.516-1.333-10.97.91-4.121 2.666-6.242 6.605-6.182 11.514.06 4.849 3.394 8.849 8.182 9.516 4.121.545 7.576-.91 10.303-4 .545-.667 1.03-1.394 1.636-2.243H56.064c-1.272 0-1.575-.788-1.151-1.818.788-1.879 2.242-5.03 3.09-6.606.183-.364.607-.97 1.516-.97h22.06c-.12 1.637-.12 3.273-.363 4.91-.667 4.363-2.303 8.363-4.97 11.878-4.364 5.758-10.06 9.333-17.273 10.303-5.939.788-11.454-.364-16.302-4-4.485-3.394-7.03-7.879-7.697-13.454-.788-6.606 1.151-12.546 5.151-17.758 4.303-5.636 10-9.212 16.97-10.485 5.697-1.03 11.151-.363 16.06 2.97 3.212 2.121 5.515 5.03 7.03 8.545.364.546.122.849-.606 1.03z"
@@ -191,7 +191,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="MySQL" description="Um dos bancos de dados mais utilizados atualmente">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M117.688 98.242c-6.973-.191-12.297.461-16.852 2.379-1.293.547-3.355.559-3.566 2.18.711.746.82 1.859 1.387 2.777 1.086 1.754 2.922 4.113 4.559 5.352 1.789 1.348 3.633 2.793 5.551 3.961 3.414 2.082 7.223 3.27 10.504 5.352 1.938 1.23 3.859 2.777 5.75 4.164.934.684 1.563 1.75 2.773 2.18v-.195c-.637-.812-.801-1.93-1.387-2.777l-2.578-2.578c-2.52-3.344-5.719-6.281-9.117-8.719-2.711-1.949-8.781-4.578-9.91-7.73l-.199-.199c1.922-.219 4.172-.914 5.949-1.391 2.98-.797 5.645-.59 8.719-1.387l4.164-1.187v-.793c-1.555-1.594-2.664-3.707-4.359-5.152-4.441-3.781-9.285-7.555-14.273-10.703-2.766-1.746-6.184-2.883-9.117-4.363-.988-.496-2.719-.758-3.371-1.586-1.539-1.961-2.379-4.449-3.566-6.738-2.488-4.793-4.93-10.023-7.137-15.066-1.504-3.437-2.484-6.828-4.359-9.91-9-14.797-18.687-23.73-33.695-32.508-3.195-1.867-7.039-2.605-11.102-3.57l-6.543-.395c-1.332-.555-2.715-2.184-3.965-2.977C16.977 3.52 4.223-3.312.539 5.672-1.785 11.34 4.016 16.871 6.09 19.746c1.457 2.012 3.32 4.273 4.359 6.539.688 1.492.805 2.984 1.391 4.559 1.438 3.883 2.695 8.109 4.559 11.695.941 1.816 1.98 3.727 3.172 5.352.727.996 1.98 1.438 2.18 2.973-1.227 1.715-1.297 4.375-1.984 6.543-3.098 9.77-1.926 21.91 2.578 29.137 1.383 2.223 4.641 6.98 9.117 5.156 3.918-1.598 3.043-6.539 4.164-10.902.254-.988.098-1.715.594-2.379v.199l3.57 7.133c2.641 4.254 7.324 8.699 11.297 11.699 2.059 1.555 3.68 4.242 6.344 5.152v-.199h-.199c-.516-.805-1.324-1.137-1.98-1.781-1.551-1.523-3.277-3.414-4.559-5.156-3.613-4.902-6.805-10.27-9.711-15.855-1.391-2.668-2.598-5.609-3.77-8.324-.453-1.047-.445-2.633-1.387-3.172-1.281 1.988-3.172 3.598-4.164 5.945-1.582 3.754-1.789 8.336-2.375 13.082-.348.125-.195.039-.398.199-2.762-.668-3.73-3.508-4.758-5.949-2.594-6.164-3.078-16.09-.793-23.191.59-1.836 3.262-7.617 2.18-9.316-.516-1.691-2.219-2.672-3.172-3.965-1.18-1.598-2.355-3.703-3.172-5.551-2.125-4.805-3.113-10.203-5.352-15.062-1.07-2.324-2.875-4.676-4.359-6.738-1.645-2.289-3.484-3.977-4.758-6.742-.453-.984-1.066-2.559-.398-3.566.215-.684.516-.969 1.191-1.191 1.148-.887 4.352.297 5.547.793 3.18 1.32 5.832 2.578 8.527 4.363 1.289.855 2.598 2.512 4.16 2.973h1.785c2.789.641 5.914.195 8.523.988 4.609 1.402 8.738 3.582 12.488 5.949 11.422 7.215 20.766 17.48 27.156 29.734 1.027 1.973 1.473 3.852 2.379 5.945 1.824 4.219 4.125 8.559 5.941 12.688 1.816 4.113 3.582 8.27 6.148 11.695 1.348 1.801 6.551 2.766 8.918 3.766 1.66.699 4.379 1.43 5.949 2.379 3 1.809 5.906 3.965 8.723 5.945 1.402.992 5.73 3.168 5.945 4.957zm-88.605-75.52c-1.453-.027-2.48.156-3.566.395v.199h.195c.695 1.422 1.918 2.34 2.777 3.566l1.98 4.164.199-.195c1.227-.867 1.789-2.25 1.781-4.363-.492-.52-.562-1.164-.992-1.785-.562-.824-1.66-1.289-2.375-1.98zm0 0"
                 ></path>
@@ -200,7 +200,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="Postgres" description="Outro dos bancos de dados mais usados">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -211,7 +211,7 @@ function toggleTheme() {
           </TechItem>
           <TechItem name="Docker" description="Plataforma para deploy de aplicações em contêiners">
             <template #icon>
-              <svg class="fill-amber-200 dark:fill-stone-700" viewBox="0 0 128 128">
+              <svg class="fill-amber-200 light:fill-stone-700" viewBox="0 0 128 128">
                 <path
                   d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.1-3.5 8.3-3.1 12.3.3 2.9 1.2 5.9 3 8.3-1.4.8-2.9 1.9-4.3 2.4-2.8 1-5.9 2-8.9 2H79V49H66V24H51v12H26v13H13v14H1.8l-.2 1.5c-.5 6.4.3 12.6 3 18.5l1.1 2.2.1.2c7.9 13.4 21.7 19 36.8 19 29.2 0 53.3-13.1 64.3-40.6 7.4.4 15-1.8 18.6-8.9l.9-1.8-1.6-1zM28 39h10v11H28V39zm13.1 44.2c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7.1 3.1 1.4 3.1 3.1zM28 52h10v11H28V52zm-13 0h11v11H15V52zm27.7 50.2c-15.8-.1-24.3-5.4-31.3-12.4 2.1.1 4.1.2 5.9.2 1.6 0 3.2 0 4.7-.1 3.9-.2 7.3-.7 10.1-1.5 2.3 5.3 6.5 10.2 14 13.8h-3.4zM51 63H40V52h11v11zm0-13H40V39h11v11zm13 13H53V52h11v11zm0-13H53V39h11v11zm0-13H53V26h11v11zm13 26H66V52h11v11zM38.8 81.2c-.2-.1-.5-.2-.8-.2-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.3-.1-.6-.2-.8-.2.3-.4.5-.8.5-.5 0-.9-.4-.9-.9.1-.4.3-.7.5-.8z"
                 ></path>
@@ -222,7 +222,76 @@ function toggleTheme() {
       </div>
       <div class="flex flex-col mt-8">
         <h1
-          class="text-center lg:text-left text-3xl font-bold text-amber-200 dark:text-stone-600 mb-4"
+          class="text-center lg:text-left text-3xl font-bold text-amber-200 light:text-stone-600 mb-4"
+        >
+          Experiência
+        </h1>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <div class="flex justify-between items-center flex-wrap">
+              <h1 class="text-lg lg:text-xl font-bold">Freelancer PHP/Laravel/Vue</h1>
+              <p>08/2023 – Atual</p>
+            </div>
+            <h3 class="italic mb-3">Freelancer</h3>
+            <ul class="list-disc ml-2 lg:ml-8">
+              <li>
+                Criação de um sistema web baseado na legislação brasileira para gestão de processos
+                administrativos.
+              </li>
+              <li>
+                Criação de um sistema web para gestão do atendimento às famílias de unidades CRAS.
+              </li>
+              <li>
+                Criação de um sistema para gestão de compras governamentais, também baseado na
+                legislação.
+              </li>
+              <li>Desenvolvimento de Testes com PHPUnit e Vitest.</li>
+              <li>Criação de dashboards intuitivas com Apex Charts e Charts.js.</li>
+              <li>
+                Ferramentas automatizadas para importação de dados CSV e exportação de dados para os
+                formatos PDF e Word.
+              </li>
+              <li>Elaboração de documentação para o código.</li>
+              <li>Deploy de aplicações usando Docker.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="flex justify-between items-center flex-wrap">
+              <h1 class="text-lg lg:text-xl font-bold">Estágio PHP/JavaScript/Java</h1>
+              <p>08/2023 – 12/2023</p>
+            </div>
+            <h3 class="italic mb-3">Departamento de Tecnologia de Araripe</h3>
+            <ul class="list-disc ml-2 lg:ml-8">
+              <li>Manutenção e novas features em um sistema de gestão de licitações públicas.</li>
+              <li>Criação de um sistema de gestão de licenças ambientais.</li>
+              <li>Criação de dashboards intuitivas com Charts.js.</li>
+              <li>Criação de uma aplicação Java Android para a gestão de chamados.</li>
+              <li>Orquestração de containers e deploy de aplicações usando Docker.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="flex justify-between items-center flex-wrap">
+              <h1 class="text-lg lg:text-xl font-bold">Educacional e Científica Javascript/C++</h1>
+              <p>02/2021 – 12/2023</p>
+            </div>
+            <h3 class="italic mb-3">E.E.E.P. Valter Nunes de Alencar</h3>
+            <ul class="list-disc ml-2 lg:ml-8">
+              <li>
+                Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de
+                Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das
+                TICs.
+              </li>
+              <li>
+                Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica
+                e Automação das TICs em Crato-CE.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col mt-8">
+        <h1
+          class="text-center lg:text-left text-3xl font-bold text-amber-200 light:text-stone-600 mb-4"
         >
           Projetos
         </h1>

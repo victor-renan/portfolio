@@ -9,9 +9,9 @@ const props = defineProps<TechItemProps>()
 
 <template>
   <div
-    class="flex items-center gap-2 p-2 hover:bg-stone-900 dark:hover:bg-stone-300 rounded-xl transition w-full md:max-w-60 cursor-default"
+    class="flex items-center gap-2 p-2 hover:bg-stone-900 light:hover:bg-stone-300 rounded-xl transition w-full md:max-w-60 cursor-default"
   >
-    <div class="w-15 h-15 p-2 rounded-lg bg-stone-800 dark:bg-stone-200">
+    <div class="w-15 h-15 p-2 rounded-lg bg-stone-800 light:bg-stone-200">
       <slot name="icon"></slot>
     </div>
     <div class="flex-1">

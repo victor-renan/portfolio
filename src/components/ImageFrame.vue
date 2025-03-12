@@ -25,13 +25,13 @@ const isLoading = ref<Load>('loading')
     />
     <div v-if="isLoading !== 'loaded'" class="w-full h-full">
       <div
-        class="bg-stone-900 dark:bg-stone-100 rounded-lg flex justify-center items-center h-full"
+        class="bg-stone-900 light:bg-stone-100 rounded-lg flex justify-center items-center h-full"
       >
         <i
           v-if="isLoading === 'loading'"
-          class="bx bx-loader-alt text-stone-700 dark:text-stone-400 animate-spin"
+          class="bx bx-loader-alt text-stone-700 light:text-stone-400 animate-spin"
         ></i>
-        <i v-else class="bx bx-image text-stone-700 dark:text-stone-400"></i>
+        <i v-else class="bx bx-image text-stone-700 light:text-stone-400"></i>
       </div>
     </div>
   </div>
