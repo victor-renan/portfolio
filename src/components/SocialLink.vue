@@ -11,7 +11,7 @@ defineProps<{
 <template>
   <a target="_blank" class="flex justify-center items-center px-4 py-2 gap-2 rounded-lg bg-bg-surface-3
     hover:bg-bg-surface-4" :href="link" rel="noopener noreferrer">
-    <component :is="icon" class="size-6"></component>
+    <component :is="icon" class="size-6 text-primary"></component>
     <span class="font-medium">{{ text }}</span>
   </a>
 </template>

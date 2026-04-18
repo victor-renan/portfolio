@@ -1,0 +1,153 @@
+{
+  "title": "Home",
+  "name": "Victor Renan",
+  "role": "Full Stack Developer",
+  "bio": "Developer with over 2 years of experience creating and maintaining robust, intuitive, and efficient software.",
+  "contacts": {
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "email": "Email",
+    "resume": "Resume"
+  },
+  "education": {
+    "title": "Education and Certifications",
+    "items": [
+      {
+        "title": "Bachelor of Information Systems",
+        "institution": "Instituto Federal do Ceará",
+        "date": "2024 - 2028"
+      },
+      {
+        "title": "Information Technology Technician",
+        "institution": "E.E.E.P. Valter Nunes de Alencar",
+        "date": "2021 - 2023"
+      },
+      {
+        "title": "Algorithms with Javascript",
+        "institution": "FreeCodeCamp",
+        "date": "2024"
+      },
+      {
+        "title": "Responsive Web Development",
+        "institution": "FreeCodeCamp",
+        "date": "2021"
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Technologies",
+    "php": "A popular web development language",
+    "laravel": "One of the most used PHP frameworks on the market",
+    "typescript": "A superset of Javascript",
+    "vue": "Framework for creating SPAs",
+    "tailwind": "CSS framework for modern applications",
+    "go": "Powerful language for modern applications",
+    "mysql": "One of the most used databases today",
+    "postgres": "Another common database",
+    "docker": "Platform for deploying applications in containers"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "title": "Freelancer",
+        "date": "08/2023 – Present",
+        "company": "Freelancer",
+        "tasks": [
+          "Creation of a web system based on Brazilian legislation for managing administrative processes.",
+          "Creation of a web system for managing family services in CRAS units.",
+          "Creation of a system for managing government purchases, also based on legislation.",
+          "Test development with PHPUnit and Vitest.",
+          "Creation of intuitive dashboards with Apex Charts and Charts.js.",
+          "Automated tools for CSV data import and PDF/Word data export.",
+          "Development of code documentation.",
+          "Application deployment using Docker."
+        ],
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "MySQL",
+          "Docker",
+          "Vitest",
+          "PHPUnit"
+        ]
+      },
+      {
+        "title": "Intern",
+        "date": "08/2023 – 12/2023",
+        "company": "Araripe Technology Department",
+        "tasks": [
+          "Maintenance and new features in a public bidding management system.",
+          "Creation of an environmental license management system.",
+          "Creation of intuitive dashboards with Charts.js.",
+          "Creation of a Java Android application for ticket management.",
+          "Container orchestration and application deployment using Docker."
+        ],
+        "tags": [
+          "PHP",
+          "JavaScript",
+          "Java",
+          "Android",
+          "Charts.js",
+          "Docker"
+        ]
+      },
+      {
+        "title": "Educational and Scientific",
+        "date": "02/2021 – 12/2023",
+        "company": "E.E.E.P. Valter Nunes de Alencar",
+        "tasks": [
+          "Development of the scientific project MyBITS, awarded regionally in Crato - CE and competitor in Fortaleza - CE in the Robotics and Automation category.",
+          "Development of the scientific project MeGuia.ai, competitor in the Robotics and Automation category in Crato-CE."
+        ],
+        "tags": [
+          "JavaScript",
+          "C++",
+          "Robotics",
+          "TICs",
+          "Arduino"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "PixGenerator",
+        "description": "A zero-dependency library made in PHP for generating static Pix QR Codes",
+        "url": "https://packagist.org/packages/victor-renan/pixgenerator",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator"
+      },
+      {
+        "title": "PixGenerator Web",
+        "description": "A web client also made in PHP and Vue.js for using the pixgenerator library",
+        "url": "https://pixgenerator-web.vercel.app/",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator-web"
+      },
+      {
+        "title": "LAA Transparente",
+        "description": "Environmental license management system with government API integrations",
+        "url": "https://packagist.org/packages/victor-renan/laatransparente",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/laatransparente"
+      },
+      {
+        "title": "Preá Framework",
+        "description": "Framework for backend application development with Go and Postgres PGX",
+        "url": "https://github.com/victor-renan/prea",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/prea"
+      },
+      {
+        "title": "FileUpload",
+        "description": "Backend for file uploads written in Go without libraries",
+        "url": "https://github.com/victor-renan/fileupload",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/fileupload"
+      }
+    ]
+  },
+  "footer": {
+    "copy": "Renan Alves",
+    "top": "Back to top"
+  }
+}

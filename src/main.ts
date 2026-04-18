@@ -6,12 +6,14 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 
 import pt from './i18n/locales/pt.json'
+import en from './i18n/locales/en.json'
 
 const i18n = createI18n({
   locale: 'pt',
-  fallbackLocale: 'pt',
+  fallbackLocale: 'en',
   messages: {
     pt,
+    en,
   },
 })
 
