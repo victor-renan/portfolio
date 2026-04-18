@@ -1,0 +1,180 @@
+{
+  "title": "Inicio",
+  "name": "Renan Alves",
+  "role": "Desarrollador Full Stack",
+  "bio": "Programador con más de 3 años de experiencia en la creación y mantenimiento de software full-stack, con enfoque en la robustez, eficiencia y mantenibilidad.",
+  "contacts": {
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "email": "Email",
+    "resume": "Currículum"
+  },
+  "education": {
+    "title": "Educación y Certificaciones",
+    "items": [
+      {
+        "title": "Grado en Sistemas de Información",
+        "institution": "Estácio",
+        "date": "2024 - 2028"
+      },
+      {
+        "title": "Técnico en Informática",
+        "institution": "E.E.E.P. Valter Nunes de Alencar",
+        "date": "2021 - 2023"
+      },
+      {
+        "title": "Algoritmos con Javascript",
+        "institution": "FreeCodeCamp",
+        "date": "2024"
+      },
+      {
+        "title": "Desarrollo Web Responsivo",
+        "institution": "FreeCodeCamp",
+        "date": "2021"
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "php": "Lenguaje con el que trabajo a diario. +3 años.",
+    "laravel": "Potente framework utilizado junto con PHP. +3 años.",
+    "typescript": "Tipado en el frontend, lo uso a diario. 3 años.",
+    "vue": "SPAs modernas con y sin Inertia. 3 años.",
+    "tailwind": "Framework CSS que uso con Vue. 2 años.",
+    "go": "Proyectos freelance, combinado con Vue, también usado para CLIs. 2 años.",
+    "mysql": "SGBD que uso a diario. +3 anos.",
+    "postgres": "SGBD que he usado en algunos proyectos educativos e independientes. +3 años.",
+    "docker": "Herramienta de contenedores usada cotidianamente para despliegue. 2 años.",
+    "inertia": "Herramienta que combina Vue y Laravel, uso corriente. 2 años."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "title": "Desarrollador Full-Stack",
+        "date": "04/2025 – Actual",
+        "company": "Federación de Industrias de Mato Grosso (FIEMT)",
+        "tasks": [
+          "Mantenimiento y desarrollo de sistemas con PHP, Laravel, Vue.js, Inertia.js y Tailwind",
+          "Creación de interfaces de usuario modernas y estandarizadas con PrimeVue",
+          "Implementación de gestión y permisos granulares de usuarios para flexibilidad de acceso",
+          "Creación de un sistema de notificación multicanal (DB, WebSocket con Reverb, Email, Push Notifications)",
+          "Despliegue de aplicaciones usando Docker",
+          "Automatización de despliegues con Github Actions",
+          "Desarrollo de pruebas unitarias e integración con PHPUnit y Pest",
+          "Creación de pruebas E2E con Cypress y Playwright para validar la accesibilidad",
+          "Uso de JIRA para la gestión de tareas",
+          "Despliegue de aplicaciones con Laravel Octane und Swoole para un alto rendimiento",
+          "Uso de herramientas como Laravel Data y Laravel Typescript Transformer de Spatie para tipagem forte entre frontend y backend"
+        ],
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "Inertia.js",
+          "MySQL",
+          "Docker",
+          "PHPUnit"
+        ]
+      },
+      {
+        "title": "Desarrollador Freelancer",
+        "date": "08/2023 – Actual",
+        "company": "Autónomo",
+        "tasks": [
+          "Creación de un sistema web basado en la legislación brasileña para la gestión de procesos administrativos",
+          "Creación de un sistema web para la gestión del servicio a familias en unidades CRAS",
+          "Creación de un sistema de gestión de compras gubernamentales, también basado en la legislación",
+          "Desarrollo de pruebas con PHPUnit y Vitest",
+          "Creación de dashboards intuitivos con Apex Charts y Charts.js",
+          "Herramientas automatizadas para la importación de datos CSV e exportación de datos a formatos PDF y Word",
+          "Elaboración de documentación de código",
+          "Despliegue de aplicaciones usando Docker"
+        ],
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "MySQL",
+          "Docker",
+          "Vitest",
+          "PHPUnit"
+        ]
+      },
+      {
+        "title": "Pasante",
+        "date": "08/2023 – 12/2023",
+        "company": "Departamento de Tecnología de Araripe",
+        "tasks": [
+          "Mantenimiento y nuevas funcionalidades en um sistema de gestión de licitações públicas",
+          "Creación de un sistema de gestión de licencias ambientales",
+          "Creación de dashboards intuitivos con Charts.js",
+          "Creación de una aplicación Java Android para la gestión de tickets",
+          "Orquestación de contenedores y despliegue de aplicaciones usando Docker"
+        ],
+        "tags": [
+          "PHP",
+          "JavaScript",
+          "Java",
+          "Android",
+          "Charts.js",
+          "Docker"
+        ]
+      },
+      {
+        "title": "Educativo y Científico",
+        "date": "02/2021 – 12/2023",
+        "company": "E.E.E.P. Valter Nunes de Alencar",
+        "tasks": [
+          "Desarrollo del proyecto científico MyBITS premiado regionalmente en la ciudad de Crato - CE y competidor en Fortaleza - CE en la categoría Robótica y Automatización",
+          "Desarrollo del proyecto científico MeGuia.ai, competidor en la categoría de Robótica y Automatización en Crato-CE"
+        ],
+        "tags": [
+          "JavaScript",
+          "C++",
+          "Robótica",
+          "Arduino"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "title": "PixGenerator",
+        "description": "Una biblioteca sin dependencias hecha en PHP para generar QR Codes Pix estáticos",
+        "url": "https://packagist.org/packages/victor-renan/pixgenerator",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator"
+      },
+      {
+        "title": "PixGenerator Web",
+        "description": "Un cliente web también hecho en PHP y Vue.js para utilizar la biblioteca pixgenerator",
+        "url": "https://pixgenerator-web.vercel.app/",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator-web"
+      },
+      {
+        "title": "LAA Transparente",
+        "description": "Sistema de gestión de licencias ambientales con integraciones de APIs gubernamentales",
+        "url": "https://packagist.org/packages/victor-renan/laatransparente",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/laatransparente"
+      },
+      {
+        "title": "Preá Framework",
+        "description": "Framework para el desarrollo de aplicaciones backend con Go y Postgres PGX",
+        "url": "https://github.com/victor-renan/prea",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/prea"
+      },
+      {
+        "title": "FileUpload",
+        "description": "Backend para el envío de archivos escrito en Go sin el uso de bibliotecas",
+        "url": "https://github.com/victor-renan/fileupload",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/fileupload"
+      }
+    ]
+  },
+  "footer": {
+    "copy": "Renan Alves",
+    "top": "Ir al inicio"
+  }
+}

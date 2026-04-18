@@ -1,8 +1,8 @@
 {
   "title": "Home",
-  "name": "Victor Renan",
+  "name": "Renan Alves",
   "role": "Full Stack Developer",
-  "bio": "Developer with over 2 years of experience creating and maintaining robust, intuitive, and efficient software.",
+  "bio": "Programmer with over 3 years of experience in creating and maintaining full-stack software, with a focus on robustness, efficiency, and maintainability.",
   "contacts": {
     "github": "Github",
     "linkedin": "Linkedin",
@@ -14,7 +14,7 @@
     "items": [
       {
         "title": "Bachelor of Information Systems",
-        "institution": "Instituto Federal do Ceará",
+        "institution": "Estácio",
         "date": "2024 - 2028"
       },
       {
@@ -36,23 +36,51 @@
   },
   "technologies": {
     "title": "Technologies",
-    "php": "A popular web development language",
-    "laravel": "One of the most used PHP frameworks on the market",
-    "typescript": "A superset of Javascript",
-    "vue": "Framework for creating SPAs",
-    "tailwind": "CSS framework for modern applications",
-    "go": "Powerful language for modern applications",
-    "mysql": "One of the most used databases today",
-    "postgres": "Another common database",
-    "docker": "Platform for deploying applications in containers"
+    "php": "Language I work with daily. +3 years.",
+    "laravel": "Powerful framework used alongside PHP. +3 years.",
+    "typescript": "Typing for the front-end, used daily. 3 years.",
+    "vue": "Modern SPAs with and without Inertia. 3 years.",
+    "tailwind": "CSS framework I use with Vue. 2 years.",
+    "go": "Freelance projects, combined with Vue, also used for CLIs. 2 years.",
+    "mysql": "DBMS I use daily. +3 years.",
+    "postgres": "DBMS I've used in some educational and freelance projects. +3 years.",
+    "docker": "Container tool used daily for deployment. 2 years.",
+    "inertia": "Tool that combines Vue and Laravel, current use. 2 years."
   },
   "experience": {
     "title": "Experience",
     "items": [
       {
-        "title": "Freelancer",
+        "title": "Full-Stack Developer",
+        "date": "04/2025 – Present",
+        "company": "Federation of Industries of Mato Grosso (FIEMT)",
+        "tasks": [
+          "Maintenance and development of systems with PHP, Laravel, Vue.js, Inertia.js and Tailwind",
+          "Creation of modern and standardized user interfaces with PrimeVue",
+          "Implementation of granular user management and permissions for access flexibility.",
+          "Creation of a multi-channel notification system (DB, WebSocket with Reverb, Email, Push Notifications)",
+          "Deployment of applications using Docker",
+          "Deployment automation with Github Actions",
+          "Development of unit and integration tests with PHPUnit and Pest",
+          "Creation of E2E tests with Cypress and Playwright to validate accessibility",
+          "Use of JIRA for task management",
+          "Deployment of applications with Laravel Octane and Swoole for high performance",
+          "Use of tools like Laravel Data and Laravel Typescript Transformer by Spatie for strong typing between frontend and backend"
+        ],
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "MySQL",
+          "Docker",
+          "Inertia.js",
+          "PHPUnit"
+        ]
+      },
+      {
+        "title": "Freelance Developer",
         "date": "08/2023 – Present",
-        "company": "Freelancer",
+        "company": "Self-employed",
         "tasks": [
           "Creation of a web system based on Brazilian legislation for managing administrative processes.",
           "Creation of a web system for managing family services in CRAS units.",

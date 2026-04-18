@@ -80,22 +80,29 @@ const techItems = [
   { name: 'MySQL', key: 'technologies.mysql', icon: MysqlIcon },
   { name: 'Postgres', key: 'technologies.postgres', icon: PostgresIcon },
   { name: 'Docker', key: 'technologies.docker', icon: DockerIcon },
-  { name: 'Inertia.js', key: 'technologies.docker', icon: InertiaIcon },
+  { name: 'Inertia.js', key: 'technologies.inertia', icon: InertiaIcon },
 ]
 
 const tagsItems = [
+  'VILT Stack',
   'Github Actions',
   'Google Cloud',
   'PHPUnit',
   'Pest',
   'Cypress',
   'Playwright',
+  'Laravel Octane',
   'Laravel Reverb',
   'FrankenPHP',
   'Swoole',
   'PrimeVue',
   'Go Cobra CLI',
   'Go Gin',
+  'Chart.js',
+  'Vite',
+  'Typescript Transformer',
+  'Laravel Data',
+  'Ziggy',
 ]
 
 const isSidebarOpen = ref(false)
@@ -120,7 +127,7 @@ const navigation = [
         <ul class="hidden md:flex items-center gap-8">
           <li v-for="item in navigation">
             <a class="hover:text-primary transition-colors text-base" :href="'#' + item.id">
-              {{ $t(item.key) }}
+              {{ $t(item.key).split(' ')[0] }}
             </a>
           </li>
         </ul>
@@ -137,6 +144,7 @@ const navigation = [
           class="bg-bg-surface-2 border border-bg-surface-3 text-sm rounded-lg px-2 py-1.5 outline-none focus:ring-1 focus:ring-primary transition cursor-pointer">
           <option value="pt">PT</option>
           <option value="en">EN</option>
+          <option value="es">ES</option>
         </select>
       </div>
     </div>
@@ -179,11 +187,11 @@ const navigation = [
 
   <main class="mt-8 p-4 flex flex-col items-center text-center max-w-204 mx-auto">
 
-    <section :id="navigation[0].id" class="max-w-150 mb-12 flex flex-col items-center text-center gap-4">
+    <section :id="navigation[0].id" class="max-w-120 mb-12 flex flex-col items-center text-center gap-4">
       <img src="./assets/img/i.jpeg" alt="Renan Alves" class="w-24 h-24 rounded-lg">
       <h2 class="title">{{ $t('name') }}</h2>
       <p>{{ $t('bio') }}</p>
-      <ul class="flex gap-2">
+      <ul class="flex gap-2 flex-wrap justify-center">
         <li v-for="item in contacts">
           <SocialLink :icon="item.icon" :text="$t(item.key)" :link="item.url" />
         </li>
@@ -194,11 +202,7 @@ const navigation = [
       <h2 class="title mb-8">{{ $t('technologies.title') }}</h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
         <li v-for="item in techItems" :key="item.name">
-          <TechCard
-            :name="item.name"
-            :icon="item.icon"
-            :description="$t(item.key)"
-          />
+          <TechCard :name="item.name" :icon="item.icon" :description="$t(item.key)" />
         </li>
       </ul>
       <ul class="flex flex-wrap gap-2">

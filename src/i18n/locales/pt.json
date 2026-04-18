@@ -1,8 +1,8 @@
 {
   "title": "Início",
-  "name": "Victor Renan",
+  "name": "Renan Alves",
   "role": "Desenvolvedor Full Stack",
-  "bio": "Programador com mais de 2 anos de experiência na criação e manutenção de softwares robustos, intuitivos e eficientes.",
+  "bio": "Programador com mais de 3 anos de experiência na criação e manutenção de softwares full-stack, com foco na robustez, eficiência e manutenibilidade.",
   "contacts": {
     "github": "Github",
     "linkedin": "Linkedin",
@@ -14,7 +14,7 @@
     "items": [
       {
         "title": "Bacharelado em Sistemas da Informação",
-        "institution": "Instituto Federal do Ceará",
+        "institution": "Estácio",
         "date": "2024 - 2028"
       },
       {
@@ -36,23 +36,51 @@
   },
   "technologies": {
     "title": "Tecnologias",
-    "php": "A popular linguagem de desenvolvimento web",
-    "laravel": "Um dos frameworks PHP mais usados do mercado",
-    "typescript": "Um superconjunto do Javascript",
-    "vue": "Framework para criação de SPAs",
-    "tailwind": "Framework CSS para aplicações modernas",
-    "go": "Poderosa linguagem para aplicações modernas",
-    "mysql": "Um dos bancos de dados mais utilizados atualmente",
-    "postgres": "Outro dos bancos de dados mais usados",
-    "docker": "Plataforma para deploy de aplicações em contêiners"
+    "php": "Linguagem com que trabalho diariamente. +3 anos.",
+    "laravel": "Framework poderoso utilizado juntamente do PHP. +3 anos.",
+    "typescript": "Tipagem no o frontend, uso diariamente. 3 anos.",
+    "vue": "SPAs modernas com e sem Inertia. 3 anos.",
+    "tailwind": "Framework CSS que uso no Vue. 2 anos.",
+    "go": "Projetos de freelance, combinado com Vue, também usado para CLIs. 2 anos.",
+    "mysql": "SGBD que uso diariamente. +3 anos.",
+    "postgres": "SGBD que já usei em alguns projetos educacionais e freelance. +3 anos.",
+    "docker": "Ferramenta de containers usada cotidianamente para deploy. 2 anos.",
+    "inertia": "Ferramenta que combina Vue e Laravel, uso corrente. 2 anos."
   },
   "experience": {
     "title": "Experiência",
     "items": [
       {
-        "title": "Freelancer",
+        "title": "Desenvolvedor Full-Stack",
+        "date": "04/2025 – Atual",
+        "company": "Federação das Indústrias do Mato Grosso (FIEMT)",
+        "tasks": [
+          "Manutenção e desenvolvimento de sistemas com PHP, Laravel, Vue.js, Inertia.js e Tailwind",
+          "Criação de interfaces de usuário modernas e padronizadas com PrimeVue",
+          "Implementação de gerenciamento e permissionamento granular de usuários, para flexibilidade de acessos.",
+          "Criação de sistema de notificação de múltiplos canais (DB, WebSocket com Reverb, Email, Push Notifications)",
+          "Implantação de aplicações usando Docker",
+          "Automatização de deploy com Github Actions",
+          "Desenvolvimento de testes unitários e de integração com PHPUnit e Pest",
+          "Criação de testes E2E com Cypress e Playwright para validar acessibilidade",
+          "Uso do JIRA para gerenciamento de tarefas",
+          "Implantação de aplicação com Laravel Octane e Swoole para alto desempenho",
+          "Uso de ferramentas como Laravel Data e Laravel Typescript Transformer da Spatie para tipagem forte entre frontend e backend"
+        ],
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "MySQL",
+          "Docker",
+          "Inertia.js",
+          "PHPUnit"
+        ]
+      },
+      {
+        "title": "Desenvolvedor Freelancer",
         "date": "08/2023 – Atual",
-        "company": "Freelancer",
+        "company": "Autônomo",
         "tasks": [
           "Criação de um sistema web baseado na legislação brasileira para gestão de processos administrativos.",
           "Criação de um sistema web para gestão do atendimento às famílias de unidades CRAS.",
