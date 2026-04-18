@@ -14,6 +14,11 @@ import DockerIcon from './components/icons/DockerIcon.vue'
 
 import photo from '@/assets/img/i.jpeg'
 import SocialLink from './components/SocialLink.vue'
+import TechCard from './components/TechCard.vue'
+import ExperienceCard from './components/ExperienceCard.vue'
+import EducationCard from './components/EducationCard.vue'
+import ProjectCard from './components/ProjectCard.vue'
+
 import GithubIcon from './components/icons/GithubIcon.vue'
 import LinkedinIcon from './components/icons/LinkedinIcon.vue'
 import EnvelopeIcon from './components/icons/EnvelopeIcon.vue'
@@ -188,16 +193,12 @@ const navigation = [
     <section :id="navigation[1].id" class="w-full mb-12">
       <h2 class="title mb-8">{{ $t('technologies.title') }}</h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-        <li v-for="item in techItems">
-          <div class="flex gap-2">
-            <div class="bg-bg-surface-2 border border-bg-surface-3 w-20 h-20 p-2 shrink-0 rounded-lg text-primary">
-              <component :is="item.icon" class="w-full h-full"></component>
-            </div>
-            <div class="text-left">
-              <h3 class="font-serif italic text-xl font-medium">{{ item.name }}</h3>
-              <p class="text-fg-muted text-base">{{ $t(item.key) }}</p>
-            </div>
-          </div>
+        <li v-for="item in techItems" :key="item.name">
+          <TechCard
+            :name="item.name"
+            :icon="item.icon"
+            :description="$t(item.key)"
+          />
         </li>
       </ul>
       <ul class="flex flex-wrap gap-2">
@@ -212,43 +213,17 @@ const navigation = [
     <section :id="navigation[2].id" class=" w-full mb-12">
       <h2 class="title mb-8">{{ $t('experience.title') }}</h2>
       <ul class="flex flex-col gap-4 text-left">
-        <li v-for="item in $tm('experience.items')">
-          <div class="p-4 rounded-lg bg-bg-surface-2 border border-bg-surface-4">
-            <div class="flex flex-wrap items-center justify-between">
-              <h3 class="text-2xl italic font-medium font-serif">{{ item.title }}</h3>
-              <p class="text-base text-fg-muted">{{ item.date }}</p>
-            </div>
-            <div>
-              <p class="text-xl leading-6 font-serif">{{ item.company }}</p>
-            </div>
-            <ul class="flex flex-wrap gap-2 my-4">
-              <li v-for="tag in item.tags">
-                <div class="px-2 py-0.5 rounded-lg bg-bg-surface-3 border border-bg-surface-4 text-xs">
-                  {{ tag }}
-                </div>
-              </li>
-            </ul>
-            <div class="text-base">
-              <ul class="list-disc ml-4">
-                <li v-for="task in item.tasks">{{ task }}</li>
-              </ul>
-            </div>
-          </div>
+        <li v-for="(item, index) in $tm('experience.items')" :key="index">
+          <ExperienceCard :item="item" />
         </li>
       </ul>
     </section>
 
     <section :id="navigation[3].id" class="w-full mb-12">
       <h2 class="title mb-8">{{ $t('education.title') }}</h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-        <li v-for="item in $tm('education.items')">
-          <div class="p-6 rounded-lg bg-bg-surface-2 border border-bg-surface-4 h-full">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <h3 class="text-2xl italic font-medium font-serif">{{ item.title }}</h3>
-              <p class="text-base text-fg-muted">{{ item.date }}</p>
-            </div>
-            <p class="text-lg font-serif">{{ item.institution }}</p>
-          </div>
+      <ul class="grid grid-cols-1 gap-4 text-left">
+        <li v-for="(item, index) in $tm('education.items')" :key="index">
+          <EducationCard :item="item" />
         </li>
       </ul>
     </section>
@@ -256,17 +231,8 @@ const navigation = [
     <section :id="navigation[4].id" class="w-full mb-12">
       <h2 class="title mb-8">{{ $t('projects.title') }}</h2>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-        <li v-for="item in $tm('projects.items')">
-          <a :href="item.url" target="_blank"
-            class="block rounded-lg bg-bg-surface-2 border border-bg-surface-4 h-full hover:border-primary transition-colors group">
-            <img :src="item.imageUrl" :alt="item.title" class="w-full h-50 rounded-lg" />
-            <div class="p-4">
-              <h3 class="text-2xl mb-2 italic font-medium font-serif group-hover:text-primary transition-colors">
-                {{ item.title }}
-              </h3>
-              <p class="text-base text-fg-muted">{{ item.description }}</p>
-            </div>
-          </a>
+        <li v-for="(item, index) in $tm('projects.items')" :key="index">
+          <ProjectCard :item="item" />
         </li>
       </ul>
     </section>
