@@ -1,0 +1,120 @@
+{
+  "name": "Victor Renan",
+  "role": "Desenvolvedor Full Stack",
+  "bio": "Programador com mais de 2 anos de experiência na criação e manutenção de softwares robustos, intuitivos e eficientes.",
+  "contacts": {
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "email": "Email",
+    "resume": "Currículo"
+  },
+  "education": {
+    "title": "Educação e Certificações",
+    "items": [
+      {
+        "title": "Bacharelado em Sistemas da Informação",
+        "institution": "Instituto Federal do Ceará | 2024-28"
+      },
+      {
+        "title": "Curso Técnico de Informática",
+        "institution": "E.E.E.P. Valter Nunes de Alencar | 2021-23"
+      },
+      {
+        "title": "Algoritmos com Javascript",
+        "institution": "FreeCodeCamp | 2024"
+      },
+      {
+        "title": "Desenvolvimento Web Responsivo",
+        "institution": "FreeCodeCamp | 2021"
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologias",
+    "php": "A popular linguagem de desenvolvimento web",
+    "laravel": "Um dos frameworks PHP mais usados do mercado",
+    "typescript": "Um superconjunto do Javascript",
+    "vue": "Framework para criação de SPAs",
+    "tailwind": "Framework CSS para aplicações modernas",
+    "go": "Poderosa linguagem para aplicações modernas",
+    "mysql": "Um dos bancos de dados mais utilizados atualmente",
+    "postgres": "Outro dos bancos de dados mais usados",
+    "docker": "Plataforma para deploy de aplicações em contêiners"
+  },
+  "experience": {
+    "title": "Experiência",
+    "items": [
+      {
+        "title": "Freelancer PHP/Laravel/Vue",
+        "date": "08/2023 – Atual",
+        "company": "Freelancer",
+        "tasks": [
+          "Criação de um sistema web baseado na legislação brasileira para gestão de processos administrativos.",
+          "Criação de um sistema web para gestão do atendimento às famílias de unidades CRAS.",
+          "Criação de um sistema para gestão de compras governamentais, também baseado na legislação.",
+          "Desenvolvimento de Testes com PHPUnit e Vitest.",
+          "Criação de dashboards intuitivas com Apex Charts e Charts.js.",
+          "Ferramentas automatizadas para importação de dados CSV e exportação de dados para os formatos PDF e Word.",
+          "Elaboração de documentação para o código.",
+          "Deploy de aplicações usando Docker."
+        ]
+      },
+      {
+        "title": "Estágio PHP/JavaScript/Java",
+        "date": "08/2023 – 12/2023",
+        "company": "Departamento de Tecnologia de Araripe",
+        "tasks": [
+          "Manutenção e novas features em um sistema de gestão de licitações públicas.",
+          "Criação de um sistema de gestão de licenças ambientais.",
+          "Criação de dashboards intuitivas com Charts.js.",
+          "Criação de uma aplicação Java Android para a gestão de chamados.",
+          "Orquestração de containers e deploy de aplicações usando Docker."
+        ]
+      },
+      {
+        "title": "Educacional e Científica Javascript/C++",
+        "date": "02/2021 – 12/2023",
+        "company": "E.E.E.P. Valter Nunes de Alencar",
+        "tasks": [
+          "Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das TICs.",
+          "Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica e Automação das TICs em Crato-CE."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "items": [
+      {
+        "title": "PixGenerator",
+        "description": "Uma biblioteca sem dependências feita em PHP para geração de QR Codes Pix estáticos",
+        "url": "https://packagist.org/packages/victor-renan/pixgenerator",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator"
+      },
+      {
+        "title": "PixGenerator Web",
+        "description": "Um cliente web também feito em PHP e Vue.js para utilização da biblioteca pixgenerator",
+        "url": "https://pixgenerator-web.vercel.app/",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/pixgenerator-web"
+      },
+      {
+        "title": "LAA Transparente",
+        "description": "Sistema de gerenciamento de licenças ambientais com integrações de APIs do governo",
+        "url": "https://packagist.org/packages/victor-renan/laatransparente",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/laatransparente"
+      },
+      {
+        "title": "Preá Framework",
+        "description": "Framework para desenvolvimento de aplicações backend com Go e Postgres PGX",
+        "url": "https://github.com/victor-renan/prea",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/prea"
+      },
+      {
+        "title": "FileUpload",
+        "description": "Backend para envio de arquivos escrita em Go sem uso de bibliotecas",
+        "url": "https://github.com/victor-renan/fileupload",
+        "imageUrl": "https://opengraph.githubassets.com/0/victor-renan/fileupload"
+      }
+    ]
+  }
+}

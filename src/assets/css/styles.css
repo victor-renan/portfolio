@@ -1,41 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 @import 'tailwindcss';
 
-@custom-variant light (&:where(.light, .light *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
-
-  --animate-slide-left: slide-left 0.5s ease-in-out;
-  --animate-appear: appear 0.5s ease-in-out;
-
-  @keyframes slide-left {
-    from {
-      margin-left: -64px;
-      opacity: 0.3;
-    }
-    to {
-      margin-left: 0;
-      opacity: 1;
-    }
-  }
-
-  @keyframes appear {
-    from {
-      opacity: 0.3;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-surface-2: var(--bg-surface-2);
+  --color-bg-surface-3: var(--bg-surface-3);
+  --color-bg-surface-4: var(--bg-surface-4);
+  --color-bg-surface-5: var(--bg-surface-5);
+  --color-bg-surface-6: var(--bg-surface-6);
+  --color-fg-main: var(--fg-main);
+  --color-fg-muted: var(--fg-muted);
 }
 
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+:root {
+  /* Neutro Light - Inspirado em Zinc/Slate */
+  --bg-surface: #ffffff;      /* Fundo principal */
+  --bg-surface-2: #f4f4f5;    /* Sidebar / Cards (Zinc 100) */
+  --bg-surface-3: #e4e4e7;    /* Inputs / Hover (Zinc 200) */
+  --bg-surface-4: #d4d4d8;    /* Bordas / Elementos ativos (Zinc 300) */
+  --bg-surface-5: #a2a2a2;    /* Bordas / Elementos ativos (Zinc 300) */
+  --bg-surface-6: #0f0f0f;    /* Bordas / Elementos ativos (Zinc 300) */
+  
+  --fg-main: #202020;         /* Texto principal (Zinc 950) */
+  --fg-muted: #505050;        /* Texto secundário (Zinc 600) */
 }
+
+.dark {
+  /* Neutro Dark - Estilo "Deep Night" */
+  --bg-surface: #09090b;      /* Fundo mais profundo (Zinc 950) */
+  --bg-surface-2: #18181b;    /* Cards / Nav (Zinc 900) */
+  --bg-surface-3: #27272a;    /* Elementos elevados / Hover (Zinc 800) */
+  --bg-surface-4: #3f3f46;    /* Bordas em destaque (Zinc 700) */
+
+  --fg-main: #fafafa;         /* Texto principal (Zinc 50) */
+  --fg-muted: #a1a1aa;        /* Texto secundário (Zinc 400) */
+}
+
+body {
+  @apply text-lg font-mono bg-bg-surface text-fg-main transition-colors duration-300;
+}
+
+img {
+  @apply object-cover;
+}
+
+.title {
+  @apply text-4xl italic font-serif font-medium text-fg-main;
+}
+
