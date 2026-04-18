@@ -40,7 +40,7 @@
 }
 
 body {
-  @apply text-lg font-mono bg-bg-surface text-fg-main transition-colors duration-300;
+  @apply text-lg bg-bg-surface text-fg-main transition-colors duration-300;
 }
 
 img {

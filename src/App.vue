@@ -80,6 +80,10 @@ const techItems = [
 const tagsItems = [
   'Github Actions',
   'Google Cloud',
+  'PHPUnit',
+  'Pest',
+  'Cypress',
+  'Playwright',
   'Laravel Reverb',
   'FrankenPHP',
   'Swoole',
@@ -120,7 +124,7 @@ const tagsItems = [
       </ul>
       <ul class="flex flex-wrap gap-2">
         <li v-for="item in tagsItems">
-          <div class="px-4 py-1 rounded-lg bg-bg-surface-2 border border-bg-surface-4">
+          <div class="px-2 py-1 text-base rounded-lg bg-bg-surface-2 border border-bg-surface-4">
             {{ item }}
           </div>
         </li>
@@ -131,15 +135,22 @@ const tagsItems = [
       <h2 class="title mb-8">{{ $t('experience.title') }}</h2>
       <ul class="flex flex-col gap-2 text-left">
         <li v-for="item in $tm('experience.items')">
-          <div class="p-6 rounded-lg bg-bg-surface-2 border border-bg-surface-4 font-serif ">
-            <div class="flex justify-between">
-              <h3 class="text-2xl italic font-medium">{{ item.title }}</h3>
-              <p class="font-mono">{{ item.date }}</p>
+          <div class="p-4 rounded-lg bg-bg-surface-2 border border-bg-surface-4">
+            <div class="flex flex-wrap items-center justify-between">
+              <h3 class="text-2xl italic font-medium font-serif">{{ item.title }}</h3>
+              <p class="text-base">{{ item.date }}</p>
             </div>
             <div>
-              <p class="text-xl leading-6">{{ item.company }}</p>
+              <p class="text-xl leading-6 font-serif">{{ item.company }}</p>
             </div>
-            <div class="font-mono text-base mt-4">
+            <ul class="flex flex-wrap gap-2 my-4">
+              <li v-for="tag in item.tags">
+                <div class="px-2 py-0.5 rounded-lg bg-bg-surface-3 border border-bg-surface-4 text-xs">
+                  {{ tag }}
+                </div>
+              </li>
+            </ul>
+            <div class="text-base">
               <ul class="list-disc ml-4">
                 <li v-for="task in item.tasks">{{ task }}</li>
               </ul>

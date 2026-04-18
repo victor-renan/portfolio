@@ -45,7 +45,7 @@
     "title": "Experiência",
     "items": [
       {
-        "title": "Freelancer PHP/Laravel/Vue",
+        "title": "Freelancer",
         "date": "08/2023 – Atual",
         "company": "Freelancer",
         "tasks": [
@@ -57,10 +57,11 @@
           "Ferramentas automatizadas para importação de dados CSV e exportação de dados para os formatos PDF e Word.",
           "Elaboração de documentação para o código.",
           "Deploy de aplicações usando Docker."
-        ]
+        ],
+        "tags": ["PHP", "Laravel", "Vue.js", "MySQL", "Docker", "Vitest", "PHPUnit"]
       },
       {
-        "title": "Estágio PHP/JavaScript/Java",
+        "title": "Estágio",
         "date": "08/2023 – 12/2023",
         "company": "Departamento de Tecnologia de Araripe",
         "tasks": [
@@ -69,16 +70,18 @@
           "Criação de dashboards intuitivas com Charts.js.",
           "Criação de uma aplicação Java Android para a gestão de chamados.",
           "Orquestração de containers e deploy de aplicações usando Docker."
-        ]
+        ],
+        "tags": ["PHP", "JavaScript", "Java", "Android", "Charts.js", "Docker"]
       },
       {
-        "title": "Educacional e Científica Javascript/C++",
+        "title": "Educacional e Científica",
         "date": "02/2021 – 12/2023",
         "company": "E.E.E.P. Valter Nunes de Alencar",
         "tasks": [
           "Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das TICs.",
           "Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica e Automação das TICs em Crato-CE."
-        ]
+        ],
+        "tags": ["JavaScript", "C++", "Robótica", "TICs"]
       }
     ]
   },
