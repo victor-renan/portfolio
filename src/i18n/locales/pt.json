@@ -13,19 +13,23 @@
     "items": [
       {
         "title": "Bacharelado em Sistemas da Informação",
-        "institution": "Instituto Federal do Ceará | 2024-28"
+        "institution": "Instituto Federal do Ceará",
+        "date": "2024 - 2028"
       },
       {
         "title": "Curso Técnico de Informática",
-        "institution": "E.E.E.P. Valter Nunes de Alencar | 2021-23"
+        "institution": "E.E.E.P. Valter Nunes de Alencar",
+        "date": "2021 - 2023"
       },
       {
         "title": "Algoritmos com Javascript",
-        "institution": "FreeCodeCamp | 2024"
+        "institution": "FreeCodeCamp",
+        "date": "2024"
       },
       {
         "title": "Desenvolvimento Web Responsivo",
-        "institution": "FreeCodeCamp | 2021"
+        "institution": "FreeCodeCamp",
+        "date": "2021"
       }
     ]
   },
@@ -58,7 +62,15 @@
           "Elaboração de documentação para o código.",
           "Deploy de aplicações usando Docker."
         ],
-        "tags": ["PHP", "Laravel", "Vue.js", "MySQL", "Docker", "Vitest", "PHPUnit"]
+        "tags": [
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "MySQL",
+          "Docker",
+          "Vitest",
+          "PHPUnit"
+        ]
       },
       {
         "title": "Estágio",
@@ -71,7 +83,14 @@
           "Criação de uma aplicação Java Android para a gestão de chamados.",
           "Orquestração de containers e deploy de aplicações usando Docker."
         ],
-        "tags": ["PHP", "JavaScript", "Java", "Android", "Charts.js", "Docker"]
+        "tags": [
+          "PHP",
+          "JavaScript",
+          "Java",
+          "Android",
+          "Charts.js",
+          "Docker"
+        ]
       },
       {
         "title": "Educacional e Científica",
@@ -81,7 +100,12 @@
           "Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das TICs.",
           "Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica e Automação das TICs em Crato-CE."
         ],
-        "tags": ["JavaScript", "C++", "Robótica", "TICs"]
+        "tags": [
+          "JavaScript",
+          "C++",
+          "Robótica",
+          "TICs"
+        ]
       }
     ]
   },

@@ -133,12 +133,12 @@ const tagsItems = [
 
     <div class="max-w-200 w-full mb-12">
       <h2 class="title mb-8">{{ $t('experience.title') }}</h2>
-      <ul class="flex flex-col gap-2 text-left">
+      <ul class="flex flex-col gap-4 text-left">
         <li v-for="item in $tm('experience.items')">
           <div class="p-4 rounded-lg bg-bg-surface-2 border border-bg-surface-4">
             <div class="flex flex-wrap items-center justify-between">
               <h3 class="text-2xl italic font-medium font-serif">{{ item.title }}</h3>
-              <p class="text-base">{{ item.date }}</p>
+              <p class="text-base text-fg-muted">{{ item.date }}</p>
             </div>
             <div>
               <p class="text-xl leading-6 font-serif">{{ item.company }}</p>
@@ -160,9 +160,22 @@ const tagsItems = [
       </ul>
     </div>
 
-    <div class="max-w-150">
+    <div class="max-w-200 w-full">
       <h2 class="title mb-8">{{ $t('education.title') }}</h2>
+      <ul class="flex flex-col gap-4 text-left">
+        <li v-for="item in $tm('education.items')">
+          <div class="p-6 rounded-lg bg-bg-surface-2 border border-bg-surface-4 h-full">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-2xl italic font-medium font-serif">{{ item.title }}</h3>
+              <p class="text-base text-fg-muted">{{ item.date }}</p>
+            </div>
+            <p class="text-lg font-serif">{{ item.institution }}</p>
+          </div>
+        </li>
+      </ul>
     </div>
+
+
   </main>
 </template>
 
