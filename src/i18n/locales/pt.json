@@ -2,7 +2,7 @@
   "title": "Início",
   "name": "Renan Alves",
   "role": "Desenvolvedor Full Stack",
-  "bio": "Programador com mais de 3 anos de experiência na criação e manutenção de softwares full-stack, com foco na robustez, eficiência e manutenibilidade.",
+  "bio": "Programador full stack com mais de 3 anos de experiência na criação e manutenção de software, com foco na robustez, eficiência e manutenibilidade.",
   "contacts": {
     "github": "Github",
     "linkedin": "Linkedin",
@@ -38,7 +38,7 @@
     "title": "Tecnologias",
     "php": "Linguagem com que trabalho diariamente. +3 anos.",
     "laravel": "Framework poderoso utilizado juntamente do PHP. +3 anos.",
-    "typescript": "Tipagem no o frontend, uso diariamente. 3 anos.",
+    "typescript": "Tipagem no frontend, uso diariamente. 3 anos.",
     "vue": "SPAs modernas com e sem Inertia. 3 anos.",
     "tailwind": "Framework CSS que uso no Vue. 2 anos.",
     "go": "Projetos de freelance, combinado com Vue, também usado para CLIs. 2 anos.",
