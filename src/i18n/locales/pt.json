@@ -126,15 +126,22 @@
         "date": "02/2021 – 12/2023",
         "company": "E.E.E.P. Valter Nunes de Alencar",
         "tasks": [
-          "Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das TICs.",
-          "Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica e Automação das TICs em Crato-CE."
+          "Desenvolvimento do projeto científico MyBITS premiado regionalmente na cidade de Crato - CE e disputante em Fortaleza - CE na categoria Robótica e Automação das TICs. Tecnologias IoT usando ThingSpeak para envio de dados de sensor ultrassonico para um site de monitoramento",
+          "Desenvolvimento do projeto científico MeGuia.ai, disputante na categoria de Robótica e Automação das TICs em Crato-CE. Detecção de padrões nos locais para guia de deficientes visuais via App Mobile Android Nativo usando Google Tensorflow e Kotlin",
+          "Criação do site oficial do curso de informática, usado para comunicados e posts. Usando Python, Django e Sass",
+          "Criação de um sistema de cadastro de lojas com painel admin e autorização",
+          "Ministração de oficina de Reconhecimento Facial com Python e OpenCV",
+          "Ministração de oficina introdução a algoritmos com Python",
+          "Ministração de oficina Node.js e Express"
         ],
         "tags": [
           "JavaScript",
           "C++",
           "Robótica",
           "TICs",
-          "Arduino"
+          "Arduino",
+          "IoT",
+          "Django"
         ]
       }
     ]
